@@ -115,7 +115,7 @@ footer {
 
     article {
       width: 80%;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       font-size: 1.3em;
     }
 
@@ -126,8 +126,15 @@ footer {
 
       i {
         margin-right: 10px;
+        margin-bottom: 30px;
         color: #dc9f38;
       }
+    }
+
+    p {
+      text-transform: uppercase;
+      font-size: 1em;
+      margin-bottom: 5px;
     }
 
     img {
