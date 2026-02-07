@@ -4,6 +4,10 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.menu-toggle {
+  display: none;
+}
+
 header {
   background-color: aliceblue;
   border-radius: 0px 0px 20px 20px;
