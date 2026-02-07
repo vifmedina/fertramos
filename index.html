@@ -14,14 +14,24 @@
   <body>
     <header>
       <nav class="nav-menu">
-        <img src="images/nav-logo.png" alt="FERTRAMOS" />
+        <div class="header-top">
+          <div class="header-logo">
+            <img src="images/nav-logo.png" alt="FERTRAMOS" />
+          </div>
+          <div class="menu-toggle" aria-label="Opções">
+            <i class="fas fa-bars fa-1x icon"></i>
+          </div>
+        </div>
+
         <div class="navegation">
           <a href="#contact">SOBRE NÓS</a>
           <a href="#products">PRODUTOS</a>
         </div>
-        <a href="https://wa.me/5517991106662" target="_blank" class="salesman-contact"
-          >FALE COM O VENDEDOR</a
-        >
+        <div class="header-button">
+          <a href="https://wa.me/5517991106662" target="_blank" class="salesman-contact"
+            >FALE COM O VENDEDOR</a
+          >
+        </div>
       </nav>
     </header>
 
@@ -141,12 +151,30 @@
               <i class="fa-brands fa-whatsapp fa-2x"></i>
             </a>
           </div>
-          <p><strong>Endereço: </strong>Rua Neuza Aparecida de Carvalho Garcia 277 Jaguaré - 15051-030</p>
+          <p>
+            <strong>Endereço: </strong>Rua Neuza Aparecida de Carvalho Garcia 277 Jaguaré -
+            15051-030
+          </p>
           <p><strong>Razão Social: </strong>FertRamos</p>
-          <p><strong>CNPJ: </strong>57709130000115</p>
+          <p><strong>CNPJ: </strong>57.709.130/0001-15</p>
         </div>
         <img src="images/footer-logo.png" alt="FERTRAMOS" />
       </div>
     </footer>
+
+    <div class="whatsapp">
+      <a href="https://wa.me/5517981889990" target="_blank">
+        <i class="fa-brands fa-whatsapp fa-2x"></i>
+      </a>
+    </div>
+
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const headerStyle = document.querySelector(".nav-menu");
+
+      menuToggle.addEventListener("click", function () {
+        headerStyle.classList.toggle("menu-open");
+      });
+    </script>
   </body>
 </html>

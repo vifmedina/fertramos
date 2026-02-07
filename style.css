@@ -84,9 +84,9 @@ main {
     }
 
     .product-content {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
 
       img {
         width: 250px;
@@ -140,6 +140,168 @@ footer {
     img {
       width: 421px;
       height: 241.6px;
+    }
+  }
+}
+
+.whatsapp {
+  display: flex;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: #dc9f38;
+  height: 25px;
+  width: 25px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  padding: 15px;
+
+  i {
+    color: white;
+  }
+}
+
+/* ------------- */
+/* REPONSIVIDADE */
+/* ------------- */
+@media (max-width: 1440px) {
+  main {
+    .main-content {
+      width: 80%;
+
+      .product {
+        width: 65%;
+      }
+    }
+  }
+
+  footer {
+    .footer-content {
+      width: 85%;
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  header {
+    background-color: aliceblue;
+    border-radius: 0px 0px 20px 20px;
+
+    .nav-menu {
+      padding: 20px 5%;
+    }
+  }
+
+  main {
+    .main-content {
+      width: 85%;
+
+      .product {
+        width: 75%;
+      }
+    }
+  }
+
+  footer {
+    .footer-content {
+      width: 90%;
+
+      article {
+        width: 80%;
+      }
+
+      p {
+        margin-right: 20px;
+      }
+
+      img {
+        width: 360.857143px;
+        height: 202.714286px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    .nav-menu {
+      flex-direction: column;
+      align-items: center;
+      margin: 0px 20px;
+      padding: 10px 20px;
+    }
+
+    .header-top {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header-logo {
+      img {
+        width: 205.7px;
+        height: 49.9px;
+      }
+    }
+
+    .menu-toggle {
+      display: block;
+    }
+
+    .navegation,
+    .header-button {
+      display: none !important;
+      width: 100% !important;
+    }
+
+    .navegation a {
+      font-size: 15px;
+    }
+
+    .nav-menu.menu-open .navegation,
+    .nav-menu.menu-open {
+      display: flex !important;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .nav-menu.menu-open .navegation a,
+    .nav-menu.menu-open .header-button a {
+      padding: 3px 0;
+      margin-bottom: 5px;
+    }
+  }
+
+  main {
+    .main-content {
+      width: 95%;
+
+      .product {
+        width: 100%;
+      }
+
+      .product-content {
+        flex-direction: column;
+
+        img {
+          width: 166.666667px;
+          height: 219.333333px;
+        }
+      }
+    }
+  }
+
+  footer {
+    .footer-content {
+      width: 95%;
+      flex-direction: column;
+      padding: 30px 20px;
+
+      img {
+        display: none;
+      }
     }
   }
 }
