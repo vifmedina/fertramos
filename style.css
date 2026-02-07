@@ -273,17 +273,28 @@ footer {
 
     .nav-menu.menu-open .navegation a,
     .nav-menu.menu-open .header-button a {
+      font-size: 1em;
       padding: 3px 0;
       margin-bottom: 5px;
     }
   }
 
   main {
+    h1 {
+      font-size: 1.7em;
+    }
+
     .main-content {
       width: 95%;
 
       .product {
         width: 100%;
+      }
+
+      .product-info {
+        h3 {
+          font-size: 1.3em;
+        }
       }
 
       .product-content {
@@ -293,15 +304,25 @@ footer {
           width: 166.666667px;
           height: 219.333333px;
         }
+
+        p {
+          font-size: 1em;
+        }
       }
     }
   }
 
   footer {
     .footer-content {
-      width: 85%;
+      width: 80%;
       flex-direction: column;
       padding: 30px 20px;
+
+      article {
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 1em;
+      }
 
       img {
         display: none;
