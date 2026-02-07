@@ -110,7 +110,7 @@ footer {
   border-radius: 20px 20px 0px 0px;
 
   .footer-content {
-    width: 70%;
+    width: 75%;
     margin: auto;
     display: flex;
     align-items: center;
@@ -169,6 +169,24 @@ footer {
 /* ------------- */
 /* REPONSIVIDADE */
 /* ------------- */
+@media (max-width: 1680px) {
+  main {
+    .main-content {
+      width: 85%;
+
+      .product {
+        width: 65%;
+      }
+    }
+  }
+
+  footer {
+    .footer-content {
+      width: 90%;
+    }
+  }
+}
+
 @media (max-width: 1440px) {
   main {
     .main-content {
@@ -182,7 +200,7 @@ footer {
 
   footer {
     .footer-content {
-      width: 85%;
+      width: 90%;
     }
   }
 }
